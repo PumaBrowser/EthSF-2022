@@ -6,6 +6,9 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+    },
     screens: {
       xs: '300px',
       ...defaultTheme.screens
