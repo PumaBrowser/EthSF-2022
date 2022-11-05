@@ -55,8 +55,9 @@ body {
       theme('colors.white') 50%,
       theme('colors.transparent')
     ),
-    url(https://img.lenster.io/hero.webp);
+    url('/gaming.png');
   background-size: cover;
+  background-position: 300px;
 }
 .dark .bg-hero {
   background: linear-gradient(
@@ -65,8 +66,9 @@ body {
       theme('colors.black') 50%,
       theme('colors.transparent')
     ),
-    url(https://img.lenster.io/hero.webp);
+    url('/gaming.png');
   background-size: cover;
+  background-position: 300px;
 }
 
 .no-scrollbar::-webkit-scrollbar {

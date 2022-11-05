@@ -24,16 +24,16 @@ export const XMTP_ENV = IS_MAINNET ? 'production' : 'dev';
 export const XMTP_PREFIX = 'lens.dev/dm';
 
 // Application
-export const APP_NAME = 'Lenster';
+export const APP_NAME = 'Puma.gg';
 export const DESCRIPTION =
-  'Lenster is a composable, decentralized, and permissionless social media web app built with Lens Protocol 🌿';
+  'Puma.gg is a composable, decentralized, and permissionless social media web app built with Lens Protocol 🌿';
 export const DEFAULT_OG = 'https://assets.lenster.xyz/images/og/logo.jpeg';
 
 // Git
 export const GIT_COMMIT_SHA = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA?.slice(0, 7);
 
 // Misc
-export const CONTACT_EMAIL = 'support@lenster.xyz';
+export const CONTACT_EMAIL = 'info@pumabrowser.com';
 export const RELAY_ON = process.env.NEXT_PUBLIC_RELAY_ON === 'true';
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
@@ -116,7 +116,7 @@ export const ATTACHMENT = 'attachment';
 
 // Localstorage keys
 export const LS_KEYS = {
-  LENSTER_STORE: 'lenster.store',
+  PUMA_STORE: 'puma.store',
   TRANSACTION_STORE: 'transaction.store',
   TIMELINE_STORE: 'timeline.store',
   MESSAGE_STORE: 'message.store'

@@ -19,27 +19,13 @@ module.exports = withBundleAnalyzer(
         newNextLinkBehavior: true
       },
       async rewrites() {
-        return [
-          {
-            source: '/sitemap.xml',
-            destination: 'https://sitemap.lenster.xyz/sitemap.xml'
-          },
-          {
-            source: '/sitemaps/:match*',
-            destination: 'https://sitemap.lenster.xyz/sitemaps/:match*'
-          }
-        ];
+        return [];
       },
       async redirects() {
         return [
           {
             source: '/discord',
-            destination: 'https://discord.com/invite/B8eKhSSUwX',
-            permanent: true
-          },
-          {
-            source: '/donate',
-            destination: 'https://gitcoin.co/grants/5007/lenster',
+            destination: 'https://discord.com/invite/Ds5R6yWw',
             permanent: true
           }
         ];

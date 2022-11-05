@@ -83,9 +83,9 @@ const Navbar: FC = () => {
                 </Disclosure.Button>
                 <Link href="/">
                   <img
-                    className="w-8 h-8"
-                    height={32}
-                    width={32}
+                    className="w-10 h-10"
+                    height={40}
+                    width={40}
                     src={currentProfile && hasPrideLogo(currentProfile) ? '/pride.svg' : '/logo.svg'}
                     alt="Logo"
                   />

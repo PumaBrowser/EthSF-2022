@@ -76,7 +76,7 @@ const CleanupSettings: NextPage = () => {
                 <b className="text-red-500">App settings</b>
                 <div className="font-bold text-xs text-gray-500">Note: Cleaning will log you out</div>
               </div>
-              <Button onClick={() => cleanup(LS_KEYS.LENSTER_STORE)}>Cleanup</Button>
+              <Button onClick={() => cleanup(LS_KEYS.PUMA_STORE)}>Cleanup</Button>
             </div>
           </div>
         </Card>

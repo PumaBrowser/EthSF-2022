@@ -1,6 +1,6 @@
 {
-  "name": "lenster",
-  "version": "1.0.3-beta",
+  "name": "puma.gg",
+  "version": "0.0.1-beta",
   "private": true,
   "scripts": {
     "dev": "next dev --port 4783",
