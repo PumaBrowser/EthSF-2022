@@ -1,10 +1,10 @@
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/69431456/183576577-2486db3f-f0a9-4252-b283-a8322e5eb8b6.png" alt="Lenster Logo">
-    <h1>Lenster</h1>
-    <strong>Decentralized, and permissionless social media app 🌿</strong>
+    <img src="https://user-images.githubusercontent.com/3760543/200141293-676fe796-747e-4505-9d8c-8595b675593e.png" alt="Puma Logo">
+    <h1>Puma.gg</h1>
+    <strong>Decentralized, and permissionless social media app - for gamers 🐾</strong>
 </div>
 <br>
-<div align="center">
+<!-- <div align="center">
     <a href="https://vercel.com/lenster?utm_source=Lenster&utm_campaign=oss">
         <img src="https://therealsujitk-vercel-badge.vercel.app/?app=lenster" alt="Vercel">
     </a>
@@ -20,7 +20,7 @@
     <a href="https://lenster.checklyhq.com">
         <img src="https://api.checklyhq.com/v1/badges/checks/4c205fee-8666-4dc8-bc92-077084ef9643?style=flat&theme=default&responseTime=true" alt="Checkly">
     </a>
-    <a href="https://status.lenster.xyz">
+    <a href="https://status.puma.gg">
         <img src="https://betteruptime.com/status-badges/v1/monitor/dfaw.svg" alt="Better Uptime">
     </a>
     <a href="https://github.com/lensterxyz/lenster/blob/main/LICENSE">
@@ -32,27 +32,27 @@
     <a href="https://twitter.com/lensterxyz">
         <img src="https://img.shields.io/twitter/follow/lensterxyz?label=lensterxyz&style=flat&logo=twitter&color=1DA1F2" alt="Lenster Twitter">
     </a>
-</div>
+</div> -->
 <div align="center">
     <br>
-    <a href="https://lenster.xyz"><b>lenster.xyz »</b></a>
+    <a href="https://puma.gg"><b>puma.gg »</b></a>
     <br><br>
-    <a href="https://discord.gg/B8eKhSSUwX"><b>Discord</b></a>
+    <a href="https://discord.com/invite/4frpm84"><b>Discord</b></a>
     •
-    <a href="https://github.com/lensterxyz/lenster/issues/new"><b>Issues</b></a>
+    <a href="https://github.com/PumaBrowser/EthSF-2022/issues/new"><b>Issues</b></a>
 </div>
 
-## 🌿 About Lenster
+## 🐾 About Puma.gg
 
-Lenster is a decentralized and permissionless social media app built with [Lens Protocol](http://lens.xyz) 🌿
+Puma.gg is a decentralized and permissionless social media app built with [Lens Protocol](http://lens.xyz) 🌿
 
 ## ✅ Community
 
-For a place to have open discussions on features, voice your ideas, or get help with general questions please visit our community at [Discord](https://lenster.xyz/discord).
+For a place to have open discussions on games, share gameplay videos, voice your ideas, or get help with general questions please visit our community at [Discord](https://discord.com/invite/4frpm84).
 
 ## 🤝 Contributing
 
-We encourage you to contribute to Lenster! Please check out the [Contributing guide](CONTRIBUTING.md) for guidelines about how to proceed.
+We encourage you to contribute to Puma.gg! Please check out the [Contributing guide](CONTRIBUTING.md) for guidelines about how to proceed.
 
 ## ⚙️ Setup
 
@@ -64,14 +64,8 @@ yarn install
 yarn dev
 ```
 
-and visit http://localhost:4783
-
-## 🤝 Supporting Repos
-
-- [Lenster Assets](https://github.com/lensterxyz/assets) - Static assets hosted in Vercel edge CDN
-- [Lenster Sitemap](https://github.com/lensterxyz/sitemap) - List of sitemap for SEO
-- [Lenster Utils](https://github.com/lensterxyz/utils) - Util APIs and http rewrites
+and visit <http://localhost:4783>
 
 ## ⚖️ License
 
-Lenster is open-sourced software licensed under the © [MIT](LICENSE).
+Puma.gg is open-sourced software licensed under the © [MIT](LICENSE).
