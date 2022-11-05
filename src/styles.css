@@ -50,28 +50,37 @@ body {
   @apply px-3 py-2 mr-2 border-0 cursor-pointer rounded-l-xl;
   @apply bg-gray-200 dark:bg-gray-900;
 }
+@media only screen and (min-width: 995px) {
+  .bg-hero {
+    background-position: 300px !important;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .bg-hero {
+    background-position: 150px !important;
+  }
+}
 
 .bg-hero {
   background: linear-gradient(
       90deg,
       theme('colors.white'),
-      theme('colors.white') 50%,
+      theme('colors.white') 30%,
       theme('colors.transparent')
     ),
     url('/gaming.png');
   background-size: cover;
-  background-position: 300px;
 }
 .dark .bg-hero {
   background: linear-gradient(
       90deg,
       theme('colors.black'),
-      theme('colors.black') 50%,
+      theme('colors.black') 30%,
       theme('colors.transparent')
     ),
     url('/gaming.png');
   background-size: cover;
-  background-position: 300px;
 }
 
 .no-scrollbar::-webkit-scrollbar {
