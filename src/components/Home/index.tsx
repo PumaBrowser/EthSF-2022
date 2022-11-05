@@ -1,6 +1,6 @@
 import NewPost from '@components/Composer/Post/New';
-import ExploreFeed from '@components/Explore/Feed';
 import BetaWarning from '@components/Home/BetaWarning';
+import Publications from '@components/Search/Publications';
 import Footer from '@components/Shared/Footer';
 import { GridItemEight, GridItemFour, GridLayout } from '@components/UI/GridLayout';
 import MetaTags from '@components/utils/MetaTags';
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               {feedType === 'TIMELINE' ? <Timeline /> : <Highlights />}
             </>
           ) : (
-            <ExploreFeed />
+            <Publications query={'Gaming #gaming'} />
           )}
         </GridItemEight>
         <GridItemFour>
