@@ -1,5 +1,6 @@
 import RecommendedProfiles from '@components/Home/RecommendedProfiles';
 import Trending from '@components/Home/Trending';
+import Publications from '@components/Search/Publications';
 import Footer from '@components/Shared/Footer';
 import { GridItemEight, GridItemFour, GridLayout } from '@components/UI/GridLayout';
 import MetaTags from '@components/utils/MetaTags';
@@ -21,6 +22,12 @@ const Explore: NextPage = () => {
 
   const tabs = [
     { name: 'For you', emoji: 'leaf-fluttering-in-wind.png', type: PublicationSortCriteria.CuratedProfiles },
+    {
+      name: 'Gaming',
+      emoji:
+        'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/video-game_1f3ae.png',
+      type: PublicationSortCriteria.TopMirrored
+    },
     { name: 'Popular', emoji: 'hundred-points.png', type: PublicationSortCriteria.TopCommented },
     { name: 'Trending', emoji: 'heart-on-fire.png', type: PublicationSortCriteria.TopCollected },
     { name: 'Interesting', emoji: 'hushed-face.png', type: PublicationSortCriteria.TopMirrored }
@@ -48,7 +55,11 @@ const Explore: NextPage = () => {
               >
                 <span className="flex items-center space-x-2">
                   <span className="hidden sm:block">{tab.name}</span>
-                  <img className="h-4" src={`${STATIC_ASSETS}/emojis/${tab.emoji}`} alt={tab.name} />
+                  <img
+                    className="h-4"
+                    src={tab.name === 'Gaming' ? tab.emoji : `${STATIC_ASSETS}/emojis/${tab.emoji}`}
+                    alt={tab.name}
+                  />
                 </span>
               </Tab>
             ))}
@@ -57,7 +68,11 @@ const Explore: NextPage = () => {
           <Tab.Panels>
             {tabs.map((tab, index) => (
               <Tab.Panel key={index}>
-                <Feed focus={focus} feedType={tab.type} />
+                {tab.name === 'Gaming' ? (
+                  <Publications query={'Gaming #gaming'} />
+                ) : (
+                  <Feed focus={focus} feedType={tab.type} />
+                )}
               </Tab.Panel>
             ))}
           </Tab.Panels>

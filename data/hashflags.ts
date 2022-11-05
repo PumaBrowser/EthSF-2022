@@ -1,6 +1,4 @@
 export const hashflags: Record<string, string> = {
-  puma: 'puma',
-  gaming: 'gaming',
   lenster: 'lenster',
   lenstube: 'lenstube',
   bitcoin: 'bitcoin',
