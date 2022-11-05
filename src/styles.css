@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'CircularXXSub', sans-serif;
+  font-family: 'Inter', sans-serif;
   @apply bg-gray-50;
   @apply dark:bg-black;
 }
@@ -18,6 +18,10 @@ body {
   @apply animate-pulse;
   @apply bg-gray-300;
   @apply dark:bg-gray-600;
+}
+
+.font-serif {
+  font-family: 'Lack' !important;
 }
 
 .menu-item {

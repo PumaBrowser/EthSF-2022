@@ -16,20 +16,8 @@ const Footer: FC = () => {
         &copy; {new Date().getFullYear()} {APP_NAME}
       </span>
       <Link href="/privacy">Privacy</Link>
-      <a href="https://lenster.xyz/discord" target="_blank" rel="noreferrer noopener">
+      <a href="https://dev.puma.gg/discord" target="_blank" rel="noreferrer noopener">
         Discord
-      </a>
-      <a href="https://lenster.xyz/donate" target="_blank" rel="noreferrer noopener">
-        Donate
-      </a>
-      <a href="https://status.lenster.xyz" target="_blank" rel="noreferrer noopener">
-        Status
-      </a>
-      <a href="https://vote.lenster.xyz" target="_blank" rel="noreferrer noopener">
-        Vote
-      </a>
-      <a href="https://feedback.lenster.xyz" target="_blank" rel="noreferrer noopener">
-        Feedback
       </a>
       <Link href="/thanks">Thanks</Link>
       <a href="https://github.com/lensterxyz/lenster" target="_blank" rel="noreferrer noopener">
