@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://user-images.githubusercontent.com/3760543/200141293-676fe796-747e-4505-9d8c-8595b675593e.png" alt="Puma Logo">
-    <h1>Puma.gg</h1>
+    <h1>Puma.gg - EthSF-2022</h1>
     <strong>Decentralized, and permissionless social media app - for gamers 🐾</strong>
 </div>
 <br>
