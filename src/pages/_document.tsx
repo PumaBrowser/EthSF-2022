@@ -1,6 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
-class LensterDocument extends Document {
+class PumaDocument extends Document {
   render() {
     return (
       <Html lang="en">
@@ -19,4 +19,4 @@ class LensterDocument extends Document {
   }
 }
 
-export default LensterDocument;
+export default PumaDocument;

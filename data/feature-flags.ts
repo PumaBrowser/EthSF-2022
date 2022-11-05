@@ -1,14 +1,14 @@
-import { lensterMembers } from './lenster-members';
+import { pumaMembers } from './puma-members';
 
 export const featureFlags = [
   {
     key: 'composer-v2',
     name: 'Composer v2',
-    enabledFor: [...lensterMembers]
+    enabledFor: [...pumaMembers]
   },
   {
     key: 'trending-widget',
     name: 'Trending widget',
-    enabledFor: [...lensterMembers]
+    enabledFor: [...pumaMembers]
   }
 ];

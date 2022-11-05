@@ -26,8 +26,8 @@ export const XMTP_PREFIX = 'lens.dev/dm';
 // Application
 export const APP_NAME = 'Puma.gg';
 export const DESCRIPTION =
-  'Puma.gg is a composable, decentralized, and permissionless social media web app built with Lens Protocol 🌿';
-export const DEFAULT_OG = 'https://assets.lenster.xyz/images/og/logo.jpeg';
+  'Puma.gg is a composable, decentralized, and permissionless social media web app for gamers built with Lens Protocol 🌿';
+export const DEFAULT_OG = '/logo.png';
 
 // Git
 export const GIT_COMMIT_SHA = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA?.slice(0, 7);

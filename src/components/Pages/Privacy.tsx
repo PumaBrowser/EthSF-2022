@@ -76,7 +76,7 @@ const Privacy: FC = () => {
               <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">Contact Us</div>
               <p className="mb-3 linkify">
                 If you have any questions about our Privacy Policy, please do not hesitate to contact us at{' '}
-                <a href="mailto:support@lenster.xyz">support@lenster.xyz</a>.
+                <a href="mailto:info@pumabrowser.com">info@pumabrowser.com</a>.
               </p>
             </div>
           </div>

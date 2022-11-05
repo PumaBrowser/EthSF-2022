@@ -298,7 +298,7 @@ const NewUpdate: FC = () => {
       metadata_id: uuid(),
       description: trimify(publicationContent),
       content: trimify(publicationContent),
-      external_url: `https://lenster.xyz/u/${currentProfile?.handle}`,
+      external_url: `https://dev.puma.gg/u/${currentProfile?.handle}`,
       image: attachments.length > 0 ? getAttachmentImage() : textNftImageUrl,
       imageMimeType: attachments.length > 0 ? getAttachmentImageMimeType() : 'image/svg+xml',
       name: isAudioPost ? audioPublication.title : `Post by @${currentProfile?.handle}`,

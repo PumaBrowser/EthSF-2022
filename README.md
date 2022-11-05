@@ -7,7 +7,7 @@
 
 <div align="center">
     <br>
-    <a href="https://puma.gg"><b>puma.gg »</b></a>
+    <a href="https://dev.puma.gg"><b>puma.gg »</b></a>
     <br><br>
     <a href="https://discord.com/invite/4frpm84"><b>Discord</b></a>
     •

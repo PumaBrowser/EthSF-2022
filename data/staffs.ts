@@ -1,8 +1,6 @@
 export const mainnetStaffs = [
-  '0x16', // davidev.lens,
-  '0x06', // wagmi.lens
-  '0x05', // stani.lens
-  '0x0d' // yoginth.lens
+  '0x017a19', // sergiy.lens,
+  '0x017aa2' // html5cat.lens
 ];
 
 export const testnetStaffs = [

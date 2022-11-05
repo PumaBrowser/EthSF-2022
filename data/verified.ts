@@ -1,5 +1,5 @@
 import { aaveMembers } from './aave-members';
-import { lensterMembers } from './lenster-members';
+import { pumaMembers } from './puma-members';
 
 export const mainnetVerified = [
   '0x8396', // alphaplease.lens
@@ -140,7 +140,7 @@ export const mainnetVerified = [
   '0x0210', // paris.lens
   '0x0160', // ethglobal.lens
   ...aaveMembers,
-  ...lensterMembers
+  ...pumaMembers
 ];
 
 export const testnetVerified = [
