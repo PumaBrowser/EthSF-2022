@@ -27,7 +27,7 @@ import getUserLocale from '@lib/getUserLocale';
 import onError from '@lib/onError';
 import splitSignature from '@lib/splitSignature';
 import trimify from '@lib/trimify';
-import uploadToArweave from '@lib/uploadToArweave';
+import uploadToWeb3Storage from '@lib/uploadToWeb3Storage';
 import dynamic from 'next/dynamic';
 import type { FC } from 'react';
 import { useEffect } from 'react';
@@ -306,7 +306,7 @@ const NewComment: FC<Props> = ({ publication }) => {
       });
     }
 
-    const id = await uploadToArweave({
+    const id = await uploadToWeb3Storage({
       version: '2.0.0',
       metadata_id: uuid(),
       description: trimify(publicationContent),

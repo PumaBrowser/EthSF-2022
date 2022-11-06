@@ -4,12 +4,12 @@ import { ERROR_MESSAGE } from 'src/constants';
 
 /**
  *
- * @param data - Data to upload to arweave
- * @returns arweave transaction id
+ * @param data - Data to upload to Web3.Storage
+ * @returns web3.storage transaction id
  */
-const uploadToArweave = async (data: any): Promise<string> => {
+const uploadToWeb3Storage = async (data: any): Promise<string> => {
   try {
-    const upload = await axios('/api/metadata/upload', {
+    const upload = await axios('/api/metadata/uploadToWeb3', {
       method: 'POST',
       data
     });
@@ -24,4 +24,4 @@ const uploadToArweave = async (data: any): Promise<string> => {
   }
 };
 
-export default uploadToArweave;
+export default uploadToWeb3Storage;

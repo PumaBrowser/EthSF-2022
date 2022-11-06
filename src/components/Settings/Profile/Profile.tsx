@@ -25,8 +25,8 @@ import hasPrideLogo from '@lib/hasPrideLogo';
 import imageProxy from '@lib/imageProxy';
 import onError from '@lib/onError';
 import splitSignature from '@lib/splitSignature';
-import uploadToArweave from '@lib/uploadToArweave';
 import uploadToIPFS from '@lib/uploadToIPFS';
+import uploadToWeb3Storage from '@lib/uploadToWeb3Storage';
 import type { ChangeEvent, FC } from 'react';
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
@@ -184,7 +184,7 @@ const Profile: FC<Props> = ({ profile }) => {
     }
 
     setIsUploading(true);
-    const id = await uploadToArweave({
+    const id = await uploadToWeb3Storage({
       name,
       bio,
       cover_picture: cover ? cover : null,
