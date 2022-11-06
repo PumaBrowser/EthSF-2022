@@ -1,3 +1,4 @@
+// @ts-ignore
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { ERROR_MESSAGE } from 'src/constants';
 import { File, Web3Storage } from 'web3.storage';
