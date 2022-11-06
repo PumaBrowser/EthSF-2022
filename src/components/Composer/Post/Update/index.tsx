@@ -20,13 +20,11 @@ import type { IGif } from '@giphy/js-types';
 import { PencilAltIcon } from '@heroicons/react/outline';
 import getSignature from '@lib/getSignature';
 import getTags from '@lib/getTags';
-import getTextNftUrl from '@lib/getTextNftUrl';
 import getUserLocale from '@lib/getUserLocale';
 import onError from '@lib/onError';
 import splitSignature from '@lib/splitSignature';
 import trimify from '@lib/trimify';
 import uploadToWeb3Storage from '@lib/uploadToWeb3Storage';
-import dynamic from 'next/dynamic';
 import type { FC } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -47,22 +45,6 @@ import { useReferenceModuleStore } from 'src/store/referencemodule';
 import { useTransactionPersistStore } from 'src/store/transaction';
 import { v4 as uuid } from 'uuid';
 import { useContractWrite, useSignTypedData } from 'wagmi';
-
-const Attachment = dynamic(() => import('@components/Shared/Attachment'), {
-  loading: () => <div className="mb-1 w-5 h-5 rounded-lg shimmer" />
-});
-const Giphy = dynamic(() => import('@components/Shared/Giphy'), {
-  loading: () => <div className="mb-1 w-5 h-5 rounded-lg shimmer" />
-});
-const CollectSettings = dynamic(() => import('@components/Shared/CollectSettings'), {
-  loading: () => <div className="mb-1 w-5 h-5 rounded-lg shimmer" />
-});
-const ReferenceSettings = dynamic(() => import('@components/Shared/ReferenceSettings'), {
-  loading: () => <div className="mb-1 w-5 h-5 rounded-lg shimmer" />
-});
-const Preview = dynamic(() => import('@components/Shared/Preview'), {
-  loading: () => <div className="mb-1 w-5 h-5 rounded-lg shimmer" />
-});
 
 const NewUpdate: FC = () => {
   // App store
@@ -271,13 +253,6 @@ const NewUpdate: FC = () => {
 
     setIsUploading(true);
     let textNftImageUrl = null;
-    if (!attachments.length) {
-      textNftImageUrl = await getTextNftUrl(
-        publicationContent,
-        currentProfile.handle,
-        new Date().toLocaleString()
-      );
-    }
 
     const attributes = [
       {
@@ -370,13 +345,6 @@ const NewUpdate: FC = () => {
         />
       )}
       <div className="block items-center sm:flex px-5">
-        <div className="flex items-center space-x-4">
-          <Attachment attachments={attachments} setAttachments={setAttachments} />
-          <Giphy setGifAttachment={(gif: IGif) => setGifAttachment(gif)} />
-          <CollectSettings />
-          <ReferenceSettings />
-          {publicationContent && <Preview />}
-        </div>
         <div className="ml-auto pt-2 sm:pt-0">
           <Button
             disabled={isLoading}
