@@ -25,7 +25,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const cid = await client.put([file]);
 
     return res.status(200).json({ success: true, id: cid });
-  } catch {
+  } catch (error) {
+    console.log(error);
     return res.status(500).json({ success: false, message: ERROR_MESSAGE });
   }
 };
